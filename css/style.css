@@ -1,0 +1,48 @@
+html {
+	scroll-behavior: smooth;
+}
+
+section {
+	scroll-margin-top: 64px;
+	/* ارتفاع الـ Navbar */
+}
+
+.hero-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+/* Style for ltr direction */
+html[dir="ltr"] .space-x-reverse {
+	--tw-space-x-reverse: 0 !important;
+}
+html[dir="rtl"] .space-x-reverse {
+	--tw-space-x-reverse: 1 !important;
+}
+
+/* --- Slider Animation --- */
+:root {
+	--scroll-direction: 100%; /* Default for RTL */
+}
+html[dir="ltr"] {
+	--scroll-direction: -100%;
+}
+@keyframes infinite-scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(var(--scroll-direction));
+	}
+}
+.animate-infinite-scroll {
+	animation: infinite-scroll 60s linear infinite;
+}
+.slider-container:hover .animate-infinite-scroll {
+	animation-play-state: paused;
+}

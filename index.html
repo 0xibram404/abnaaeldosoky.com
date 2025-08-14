@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شركة أبناء الدسوقي للتعدين</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <Link rel="stylesheet" href="css/style.css" />
+    <script src="js/tailwind-config.js"></script>
+</head>
+
+<body class="font-sans bg-gray-100">
+
+    <!-- ================== Top Bar ================== -->
+    <div class="bg-company-dark-blue text-white text-sm hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-2">
+                <div class="flex items-center">
+                    <button id="lang-switcher"
+                        class="flex items-center space-x-2 space-x-reverse hover:text-company-yellow transition-colors">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m13 19 3.5-9 3.5 9m-6.125-2h5.25M3 7h7m0 0h2m-2 0c0 1.63-.793 3.926-2.239 5.655M7.5 6.818V5m.261 7.655C6.79 13.82 5.521 14.725 4 15m3.761-2.345L5 10m2.761 2.655L10.2 15" />
+                        </svg>
+
+                        <span data-key="lang_switcher_text">EN</span>
+                    </button>
+                </div>
+                <div class="flex space-x-6 space-x-reverse">
+                    <a href="tel:+20120126343"
+                        class="flex items-center space-x-2 space-x-reverse hover:text-company-yellow transition-colors">
+                        <span>0120126343</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+
+                    </a>
+                    <a href="mailto:sales@abnaaeldosoky.com"
+                        class="flex items-center space-x-2 space-x-reverse hover:text-company-yellow transition-colors">
+                        <span>sales@abnaaeldosoky.com</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================== Navbar ================== -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="flex items-center space-x-2 space-x-reverse">
+                        <img class="h-10 w-auto" src="../images/logo.png" alt="شعار شركة أبناء الدسوقي" />
+                        <span class="text-xl font-bold text-company-dark-blue" data-key="company_name_nav">
+                            أبناء الدسوقي للتعدين</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4 space-x-reverse">
+                        <a href="#home" data-key="nav_home"
+                            class="text-gray-700 hover:text-company-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">الرئيسية</a>
+                        <a href="#about" data-key="nav_about"
+                            class="text-gray-700 hover:text-company-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">من
+                            نحن</a>
+                        <a href="#board" data-key="nav_board"
+                            class="text-gray-700 hover:text-company-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">مجلس
+                            الإدارة</a>
+                        <a href="#products" data-key="nav_products"
+                            class="text-gray-700 hover:text-company-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">منتجاتنا</a>
+                        <a href="#testimonials" data-key="nav_testimonials"
+                            class="text-gray-700 hover:text-company-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">آراء
+                            العملاء</a>
+                        <a href="#contact" data-key="nav_contact"
+                            class="text-gray-700 hover:text-company-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">اتصل
+                            بنا</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button"
+                        class="bg-company-dark-blue inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-company-black focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+                <a href="#home" data-key="nav_home_mobile"
+                    class="text-gray-700 hover:bg-gray-100 hover:text-company-yellow block px-3 py-2 rounded-md text-base font-medium">الرئيسية</a>
+                <a href="#about" data-key="nav_about_mobile"
+                    class="text-gray-700 hover:bg-gray-100 hover:text-company-yellow block px-3 py-2 rounded-md text-base font-medium">من
+                    نحن</a>
+                <a href="#board" data-key="nav_board_mobile"
+                    class="text-gray-700 hover:bg-gray-100 hover:text-company-yellow block px-3 py-2 rounded-md text-base font-medium">مجلس
+                    الإدارة</a>
+                <a href="#products" data-key="nav_products_mobile"
+                    class="text-gray-700 hover:bg-gray-100 hover:text-company-yellow block px-3 py-2 rounded-md text-base font-medium">منتجاتنا</a>
+                <a href="#testimonials" data-key="nav_testimonials_mobile"
+                    class="text-gray-700 hover:bg-gray-100 hover:text-company-yellow block px-3 py-2 rounded-md text-base font-medium">آراء
+                    العملاء</a>
+                <a href="#contact" data-key="nav_contact_mobile"
+                    class="text-gray-700 hover:bg-gray-100 hover:text-company-yellow block px-3 py-2 rounded-md text-base font-medium">اتصل
+                    بنا</a>
+                <button id="lang-switcher-mobile"
+                    class="w-full text-left text-gray-700 hover:bg-gray-100 hover:text-company-yellow block px-3 py-2 rounded-md text-base font-medium flex items-center space-x-2 space-x-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m0 0a9 9 0 019-9m-9 9a9 9 0 01-9 9" />
+                    </svg>
+                    <span data-key="lang_switcher_text_mobile">Switch to English</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================== Main Content ================== -->
+    <main>
+        <!-- Home Section (Hero) -->
+        <section id="home" class="relative text-white overflow-hidden" style="height: calc(100vh - 64px)">
+            <video autoplay muted loop class="hero-video">
+                <source src="images/hero.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4" data-key="hero_title">
+                    شركة عمر يحيي عبدالمعطي وشركاه
+                </h1>
+                <p class="text-lg md:text-xl max-w-3xl mb-8" data-key="hero_subtitle">
+                    خبرة تمتد لأكثر من 47 عاماً في تعدين وتوريد أجود الخامات المعدنية.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 sm:space-x-reverse">
+                    <a href="#products" data-key="hero_btn_products"
+                        class="bg-company-yellow hover:bg-yellow-500 text-company-dark-blue font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105">تصفح
+                        المنتجات</a>
+                    <a href="#about" data-key="hero_btn_about"
+                        class="bg-transparent hover:bg-white hover:text-company-dark-blue text-white font-bold py-3 px-8 rounded-lg border-2 border-white text-lg transition duration-300">معرفة
+                        المزيد</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-company-dark-blue sm:text-4xl" data-key="about_title">
+                        من نحن
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600" data-key="about_subtitle">
+                        إرث من الخبرة... والتزام بالجودة
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-5 gap-12 items-center">
+                    <div class="md:col-span-3">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4" data-key="about_story_title">
+                            قصتنا
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6" data-key="about_story_p">
+                            تأسست شركة أبناء الدسوقي عام
+                            <span class="font-bold text-company-yellow">1978</span>، ومنذ ذلك الحين، ونحن نكرس جهودنا
+                            لنكون في طليعة شركات التعدين في المنطقة. على مدار
+                            <span class="font-bold text-company-yellow">47 عاماً</span>، بنينا سمعتنا على أسس من الثقة
+                            والجودة الفائقة.
+                            ولتكمل هذه المسيرة، انضمت إليها بكل فخر <span class="font-bold">شركة عمر يحيي عبدالمعطي
+                                دردير وشركاه</span>، لتواصل نفس الالتزام بالتميز وخدمة عملائنا.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <span class="text-3xl font-bold text-company-dark-blue">1978</span>
+                                <p class="text-sm text-gray-500" data-key="about_founded_year">
+                                    عام التأسيس
+                                </p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <span class="text-3xl font-bold text-company-dark-blue">47+</span>
+                                <p class="text-sm text-gray-500" data-key="about_experience">
+                                    سنة من الخبرة
+                                </p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <span class="text-2xl font-bold text-company-dark-blue">100-114-571</span>
+                                <p class="text-sm text-gray-500" data-key="about_tax_id">
+                                    الرقم الضريبي
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Video Player -->
+                    <div class="md:col-span-2 flex justify-center">
+                        <div class="rounded-lg shadow-xl overflow-hidden w-full max-w-[400px]" style="height: 550px;">
+                            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                                <source src="images/about.mp4" type="video/mp4">
+                                متصفحك لا يدعم عرض مقاطع الفيديو.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Board of Directors Section -->
+        <section id="board" class="py-20 bg-company-dark-blue">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-company-light-gray sm:text-4xl" data-key="board_title">
+                        مجلس الإدارة
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-100" data-key="board_subtitle">
+                        القيادة التي تقود مسيرتنا نحو النجاح
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
+                    <!-- Member Card -->
+                    <div class="text-center">
+                        <img class="w-40 h-40 mx-auto rounded-full shadow-lg"
+                            src="https://placehold.co/200x200/e8e5e7/11354d?text=OMAR" alt="صورة عضو مجلس الإدارة">
+                        <h3 class="mt-6 text-xl font-bold text-company-light-gray" data-key="board_member1_name">عمر
+                            يحيي
+                            عبدالمعطي</h3>
+                        <p class="text-company-yellow" data-key="board_member1_title">المدير العام</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Products Section -->
+        <section id="products" class="py-20 bg-company-light-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-company-dark-blue sm:text-4xl" data-key="products_title">
+                        منتجاتنا عالية الجودة
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600" data-key="products_subtitle">
+                        نحن متخصصون في تعدين وتوريد مجموعة متنوعة من الخامات
+                        التي تلبي أعلى المعايير الصناعية.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                    <!-- Product Card: Fluorspar -->
+                    <div
+                        class="group bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="w-full h-96 overflow-hidden">
+                            <img src="/images/1.png" alt="صورة الفلورسبار"
+                                class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-company-dark-blue mb-2" data-key="product1_name">
+                                الفلورسبار</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow" data-key="product1_desc">أساسي في صناعات
+                                الصلب والألومنيوم، ونوفره بدرجات نقاء متعددة.</p>
+                            <a href="#" class="font-bold text-company-yellow hover:text-yellow-500 mt-auto"
+                                data-key="product_readmore">قراءة المزيد &larr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card: Feldspar -->
+                    <div
+                        class="group bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="w-full h-96 overflow-hidden">
+                            <img src="/images/2.png" alt="صورة الفلسبار"
+                                class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-company-dark-blue mb-2" data-key="product2_name">الفلسبار
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow" data-key="product2_desc">عنصر حيوي في صناعة
+                                الزجاج والسيراميك، يساهم في تحسين جودة المنتج.</p>
+                            <a href="#" class="font-bold text-company-yellow hover:text-yellow-500 mt-auto"
+                                data-key="product_readmore2">قراءة المزيد &larr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card: Quartz -->
+                    <div
+                        class="group bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="w-full h-96 overflow-hidden">
+                            <img src="/images/3.png" alt="صورة الكوارتز"
+                                class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-company-dark-blue mb-2" data-key="product3_name">الكوارتز
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow" data-key="product3_desc">يستخدم في صناعة
+                                الزجاج، الإلكترونيات، والمواد الكاشطة بفضل صلابته العالية.</p>
+                            <a href="#" class="font-bold text-company-yellow hover:text-yellow-500 mt-auto"
+                                data-key="product_readmore3">قراءة المزيد &larr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card: Barite -->
+                    <div
+                        class="group bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="w-full h-96 overflow-hidden">
+                            <img src="/images/4.png" alt="صورة البرايت"
+                                class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-company-dark-blue mb-2" data-key="product4_name">البرايت
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow" data-key="product4_desc">مكون رئيسي في سوائل
+                                حفر آبار النفط والغاز، والدهانات والبلاستيك.</p>
+                            <a href="#" class="font-bold text-company-yellow hover:text-yellow-500 mt-auto"
+                                data-key="product_readmore4">قراءة المزيد &larr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card: Talc -->
+                    <div
+                        class="group bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="w-full h-96 overflow-hidden">
+                            <img src="/images/5.png" alt="صورة التلك"
+                                class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-company-dark-blue mb-2" data-key="product5_name">التلك
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow" data-key="product5_desc">يدخل في صناعات
+                                الورق، السيراميك، والمطاط بفضل نعومته وخصائصه الفريدة.</p>
+                            <a href="#" class="font-bold text-company-yellow hover:text-yellow-500 mt-auto"
+                                data-key="product_readmore5">قراءة المزيد &larr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-company-dark-blue sm:text-4xl" data-key="clients_title">
+                        شركاء النجاح
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600" data-key="clients_subtitle">
+                        نفخر بثقة كبرى الشركات في مصر والشرق الأوسط.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-9 items-center">
+                    <img src="/images/ezz-sadat.svg" alt="شعار حديد عز"
+                        class="mx-auto grayscale hover:grayscale-0 transition duration-300" />
+                    <img src="/images/masreen.svg" alt="شعار المصريين للصلب"
+                        class="mx-auto grayscale hover:grayscale-0 transition duration-300" />
+                    <img src="/images/sabaek.svg" alt="شعار السبائك الحديدية"
+                        class="mx-auto grayscale hover:grayscale-0 transition duration-300" />
+                    <img src="/images/burhanco.svg" alt="شعار برهانكو"
+                        class="mx-auto grayscale hover:grayscale-0 transition duration-300" />
+                    <img src="/images/ganope.svg" alt="شعار جنوب الوادي"
+                        class="mx-auto grayscale hover:grayscale-0 transition duration-300" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-company-light-gray overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-company-dark-blue sm:text-4xl"
+                        data-key="testimonials_title">
+                        ماذا يقول عملاؤنا
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600" data-key="testimonials_subtitle">
+                        شهادات نفخر بها من شركاء النجاح
+                    </p>
+                </div>
+                <div class="slider-container w-full">
+                    <div class="flex animate-infinite-scroll">
+                        <!-- Original 3 Testimonials -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-4">
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+                                <p class="text-gray-600 mb-6" data-key="testimonial1_text">"جودة الخامات التي تقدمها
+                                    شركة أبناء الدسوقي لا مثيل لها، والتزامهم بمواعيد التسليم ساعدنا على تحسين كفاءة
+                                    إنتاجنا بشكل ملحوظ."</p>
+                                <div class="flex items-center mt-auto">
+                                    <div>
+                                        <p class="font-bold text-company-dark-blue" data-key="testimonial1_name">مدير
+                                            المشتريات</p>
+                                        <p class="text-sm text-gray-500" data-key="testimonial1_company">شركة حديد عز
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-4">
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+                                <p class="text-gray-600 mb-6" data-key="testimonial2_text">"شراكتنا معهم ممتدة لسنوات،
+                                    ونثق تماماً في خبرتهم وقدرتهم على توفير أفضل المنتجات التي تلبي احتياجاتنا الصناعية
+                                    الدقيقة."</p>
+                                <div class="flex items-center mt-auto">
+                                    <div>
+                                        <p class="font-bold text-company-dark-blue" data-key="testimonial2_name">رئيس
+                                            قطاع الإنتاج</p>
+                                        <p class="text-sm text-gray-500" data-key="testimonial2_company">شركة المصريين
+                                            للصلب</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-4">
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+                                <p class="text-gray-600 mb-6" data-key="testimonial3_text">"التعامل مع فريق أبناء
+                                    الدسوقي يتميز بالاحترافية العالية والاستجابة السريعة. هم شركاء حقيقيون يمكن الاعتماد
+                                    عليهم."</p>
+                                <div class="flex items-center mt-auto">
+                                    <div>
+                                        <p class="font-bold text-company-dark-blue" data-key="testimonial3_name">مهندس
+                                            جودة</p>
+                                        <p class="text-sm text-gray-500" data-key="testimonial3_company">شركة برهانكو -
+                                            قطر</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Duplicated 3 Testimonials for seamless loop -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-4">
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+                                <p class="text-gray-600 mb-6" data-key="testimonial1_text_dup">"جودة الخامات التي تقدمها
+                                    شركة أبناء الدسوقي لا مثيل لها، والتزامهم بمواعيد التسليم ساعدنا على تحسين كفاءة
+                                    إنتاجنا بشكل ملحوظ."</p>
+                                <div class="flex items-center mt-auto">
+                                    <div>
+                                        <p class="font-bold text-company-dark-blue" data-key="testimonial1_name_dup">
+                                            مدير المشتريات</p>
+                                        <p class="text-sm text-gray-500" data-key="testimonial1_company_dup">شركة حديد
+                                            عز</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-4">
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+                                <p class="text-gray-600 mb-6" data-key="testimonial2_text_dup">"شراكتنا معهم ممتدة
+                                    لسنوات، ونثق تماماً في خبرتهم وقدرتهم على توفير أفضل المنتجات التي تلبي احتياجاتنا
+                                    الصناعية الدقيقة."</p>
+                                <div class="flex items-center mt-auto">
+                                    <div>
+                                        <p class="font-bold text-company-dark-blue" data-key="testimonial2_name_dup">
+                                            رئيس قطاع الإنتاج</p>
+                                        <p class="text-sm text-gray-500" data-key="testimonial2_company_dup">شركة
+                                            المصريين للصلب</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-4">
+                            <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+                                <p class="text-gray-600 mb-6" data-key="testimonial3_text_dup">"التعامل مع فريق أبناء
+                                    الدسوقي يتميز بالاحترافية العالية والاستجابة السريعة. هم شركاء حقيقيون يمكن الاعتماد
+                                    عليهم."</p>
+                                <div class="flex items-center mt-auto">
+                                    <div>
+                                        <p class="font-bold text-company-dark-blue" data-key="testimonial3_name_dup">
+                                            مهندس جودة</p>
+                                        <p class="text-sm text-gray-500" data-key="testimonial3_company_dup">شركة
+                                            برهانكو - قطر</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-20 bg-company-dark-blue text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold" data-key="contact_title">تواصل معنا</h2>
+                    <p class="mt-4 text-lg text-gray-300" data-key="contact_subtitle">
+                        هل لديك استفسار؟ نحن هنا للمساعدة.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <!-- Google Map -->
+                    <div class="h-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57273.23594138138!2d32.68999884803731!3d26.17514083320251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14467c05396c2053%3A0x84352f3e47358797!2sQena%2C%20Qena%201%2C%20Qena%20Governorate!5e0!3m2!1sen!2seg!4v1663000000000!5m2!1sen!2seg"
+                            class="w-full h-full rounded-lg shadow-lg" style="border:0; min-height: 450px;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <!-- Contact Form -->
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-2 text-right"
+                                data-key="form_name">الاسم الكامل</label>
+                            <input type="text" name="name" id="name" required
+                                class="block w-full px-4 py-3 rounded-md bg-gray-700 border-gray-600 text-white focus:ring-company-yellow focus:border-company-yellow">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2 text-right"
+                                data-key="form_email">البريد الإلكتروني</label>
+                            <input type="email" name="email" id="email" required
+                                class="block w-full px-4 py-3 rounded-md bg-gray-700 border-gray-600 text-white focus:ring-company-yellow focus:border-company-yellow">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-300 mb-2 text-right"
+                                data-key="form_phone">رقم الهاتف</label>
+                            <input type="tel" name="phone" id="phone"
+                                class="block w-full px-4 py-3 rounded-md bg-gray-700 border-gray-600 text-white focus:ring-company-yellow focus:border-company-yellow">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-2 text-right"
+                                data-key="form_message">رسالتك أو استفسارك</label>
+                            <textarea name="message" id="message" rows="4" required
+                                class="block w-full px-4 py-3 rounded-md bg-gray-700 border-gray-600 text-white focus:ring-company-yellow focus:border-company-yellow"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full bg-company-yellow hover:bg-yellow-500 text-company-dark-blue font-bold py-3 px-6 rounded-lg text-lg transition duration-300 transform hover:scale-105"
+                                data-key="form_submit">
+                                إرسال الرسالة
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================== Footer ================== -->
+    <footer class="bg-company-black text-gray-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About Company -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <img class="h-10 w-auto" src="/images/logo.png" alt="شعار شركة أبناء الدسوقي">
+                        <span class="text-xl font-bold text-white" data-key="footer_company_name">أبناء الدسوقي</span>
+                    </div>
+                    <p class="text-sm text-gray-400" data-key="footer_about">رواد تعدين وتوريد الخامات المعدنية عالية
+                        الجودة منذ عام 1978.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase" data-key="footer_links">
+                        روابط سريعة</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#home" class="text-base text-gray-400 hover:text-white"
+                                data-key="footer_home">الرئيسية</a></li>
+                        <li><a href="#about" class="text-base text-gray-400 hover:text-white"
+                                data-key="footer_about_title">من
+                                نحن</a></li>
+                        <li><a href="#products" class="text-base text-gray-400 hover:text-white"
+                                data-key="footer_products">منتجاتنا</a></li>
+                        <li><a href="#clients" class="text-base text-gray-400 hover:text-white"
+                                data-key="footer_clients">عملاؤنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase" data-key="footer_contact">
+                        تواصل معنا</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <span class="mr-3 text-base text-gray-400" data-key="footer_address">قنا – ابنود، شارع
+                                الإسراء</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <a href="tel:+20120126343"
+                                class="mr-3 text-base text-gray-400 hover:text-white">+20120126343</a>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <a href="mailto:sales@abnaaeldosoky.com"
+                                class="mr-3 text-base text-gray-400 hover:text-white">sales@abnaaeldosoky.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase" data-key="footer_social">
+                        تابعنا</h3>
+                    <div class="flex mt-4 space-x-4 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-white"><span class="sr-only">Facebook</span><svg
+                                class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.735 0 1.325-.59 1.325-1.325V1.325C24 .59 23.41 0 22.675 0z" />
+                            </svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><span class="sr-only">LinkedIn</span><svg
+                                class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center">
+                <p class="text-base text-gray-400" data-key="footer_copyright">&copy; 2025 شركة أبناء الدسوقي للتعدين.
+                    جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
