@@ -41,8 +41,11 @@ html[dir="ltr"] {
 	}
 }
 .animate-infinite-scroll {
-	animation: infinite-scroll 60s linear infinite;
+	animation: infinite-scroll 45s linear infinite;
 }
+
 .slider-container:hover .animate-infinite-scroll {
 	animation-play-state: paused;
 }
+
+

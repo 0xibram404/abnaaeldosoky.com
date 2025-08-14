@@ -1,3 +1,4 @@
+
 const translations = {
 	ar: {
 		lang_switcher_text: "EN",
